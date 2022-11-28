@@ -224,6 +224,30 @@ public class cream extends AppCompatActivity {
                     } else {
                         Toast.makeText(cream.this, "4번 문제 땡", Toast.LENGTH_SHORT).show();
                         //return false;
+                        AlertDialog.Builder gameover_dlg=new AlertDialog.Builder(cream.this);
+                        gameover_dlg.setTitle("게임 종료");
+                        if(ansnum<=1){
+                            gameover_dlg.setMessage("Bad");
+                            //log2.updateUsers5(0,0,0,0,1,1); /////////////////////////////////////////////////////////////////////
+                            log2.updateUsers5(0,0,0,0,1,1);
+                        }
+                        else if(ansnum<=3){
+                            gameover_dlg.setMessage("Good");
+                            //log2.updateUsers5(0,0,0,0,2,2);  /////////////////////////////////////////////////////////////////////
+                            log2.updateUsers5(0,0,0,0,2,2);
+                        }
+                        else if(ansnum==4){
+                            gameover_dlg.setMessage("Perfect!");
+                            //log2.updateUsers5(0,0,0,0,3,3);  //////////////////////////////////////////////////////////////////////////
+                            log2.updateUsers5(0,0,0,0,3,3);
+                        }
+                        gameover_dlg.setPositiveButton("다음 단계로", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent intent = new Intent(cream.this, showtotal.class);
+                                startActivity(intent);
+                            }
+                        });
+                        gameover_dlg.show();
                     }
 
                     if (ansnum == 1) {

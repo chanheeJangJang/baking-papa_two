@@ -31,63 +31,63 @@ public class showtotal extends AppCompatActivity {
         btn1 = (Button) findViewById(R.id.button3);
         btn2 = (Button) findViewById(R.id.button4);
 
-        if(log2.gettotal().equals(15)){
+        if(log2.gettotal().equals("15")){
             img1.setVisibility(View.VISIBLE);
             text1.setText("너무 맛있어요! 아빠 최고");
 
         }
-        if(log2.gettotal().equals(14)){
+        if(log2.gettotal().equals("14")){
             img1.setVisibility(View.VISIBLE);
             text1.setText("너무 맛있어요! 아빠 최고");
 
         }
-        if(log2.gettotal().equals(13)){
+        if(log2.gettotal().equals("13")){
             img1.setVisibility(View.VISIBLE);
             text1.setText("너무 맛있어요! 아빠 최고");
 
         }
-        if(log2.gettotal().equals(12)){
+        if(log2.gettotal().equals("12")){
             img1.setVisibility(View.VISIBLE);
             text1.setText("너무 맛있어요! 아빠 최고");
 
         }
         ////////////////////////////////////////////
-        if(log2.gettotal().equals(11)){
+        if(log2.gettotal().equals("11")){
             img2.setVisibility(View.VISIBLE);
             text1.setText("음~ 나쁘지 않아요. 잘 먹었습니다.");
 
-        }if(log2.gettotal().equals(10)){
+        }if(log2.gettotal().equals("10")){
             img2.setVisibility(View.VISIBLE);
             text1.setText("음~ 나쁘지 않아요. 잘 먹었습니다.");
 
-        }if(log2.gettotal().equals(9)){
+        }if(log2.gettotal().equals("9")){
             img2.setVisibility(View.VISIBLE);
             text1.setText("음~ 나쁘지 않아요. 잘 먹었습니다.");
 
         }
-        if(log2.gettotal().equals(8)){
+        if(log2.gettotal().equals("8")){
             img2.setVisibility(View.VISIBLE);
             text1.setText("음~ 나쁘지 않아요. 잘 먹었습니다.");
 
         }
         ///////////////////////////////////////////
-        if(log2.gettotal().equals(7)){
+        if(log2.gettotal().equals("7")){
             img3.setVisibility(View.VISIBLE);
             text1.setText("우엑... 맛이 이상해요.....");
 
-        }if(log2.gettotal().equals(6)){
+        }if(log2.gettotal().equals("6")){
             img3.setVisibility(View.VISIBLE);
             text1.setText("우엑... 맛이 이상해요.....");
 
-        }if(log2.gettotal().equals(5)){
+        }if(log2.gettotal().equals("5")){
             img3.setVisibility(View.VISIBLE);
             text1.setText("우엑... 맛이 이상해요.....");
 
-        }if(log2.gettotal().equals(4)){
+        }if(log2.gettotal().equals("4")){
             img3.setVisibility(View.VISIBLE);
             text1.setText("우엑... 맛이 이상해요.....");
         }
-        else {
+        if(log2.gettotal().equals("3")) {
             img3.setVisibility(View.VISIBLE);
             text1.setText("우엑... 맛이 이상해요.....");
 
