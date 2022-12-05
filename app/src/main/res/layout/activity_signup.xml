@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backbbaa"
     tools:context=".signup">
 
     <LinearLayout
@@ -24,7 +25,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="생년월일"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextText1"
@@ -33,7 +35,9 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="20sp" />
+                android:textColor="#EBAF4E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -48,7 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="전화번호"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextText2"
@@ -57,7 +62,9 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="20sp" />
+                android:textColor="#EBAF4E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -72,7 +79,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="이름"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextText3"
@@ -81,7 +89,9 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="20sp" />
+                android:textColor="#EBAF4E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -96,7 +106,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="닉네임"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextText4"
@@ -105,7 +116,9 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="20sp" />
+                android:textColor="#EBAF4E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -120,7 +133,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="ID"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextText5"
@@ -129,7 +143,9 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="20sp" />
+                android:textColor="#EBAF4E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -144,7 +160,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="PW"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextText6"
@@ -153,7 +170,9 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="20sp" />
+                android:textColor="#EBAF4E"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
@@ -164,7 +183,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
         android:layout_marginEnd="150dp"
+        android:backgroundTint="#EBAF4E"
         android:text="확인"
+        android:textColor="#630404"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

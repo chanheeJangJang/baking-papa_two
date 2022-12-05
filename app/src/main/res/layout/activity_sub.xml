@@ -6,44 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".sub">
 
+    <TextView
+        android:id="@+id/txtmission2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD69A"
+        android:text="20초 동안 7개의 딸기를 찾아보자!"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/txtmission2"
         tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/timertxt2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="남은 시간 : 20"
+                android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/imageView1"
-                android:layout_width="60dp"
+                android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/img" />
 
             <TextView
                 android:id="@+id/textView1"
-                android:layout_width="203dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="를 찾아 주세요!" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="0"
-                android:gravity="right"/>
+                android:gravity="right"
+                android:text="0" />
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="50dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="/ 7" />
 
@@ -53,13 +73,15 @@
             android:id="@+id/btnstart"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="시작!" />
+            android:backgroundTint="#EBAF4E"
+            android:text="시작!"
+            android:textColor="#640300" />
 
     </LinearLayout>
 
     <ImageView
         android:id="@+id/imageViewback"
-        android:layout_width="413dp"
+        android:layout_width="match_parent"
         android:layout_height="421dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,25 +96,29 @@
         android:id="@+id/imageButton6"
         android:layout_width="15dp"
         android:layout_height="13dp"
-        android:layout_marginStart="32dp"
+        android:layout_marginTop="325dp"
         android:layout_marginBottom="50dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewback"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewback"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewback"
-        app:layout_constraintVertical_bias="0.888"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ministraw" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="15dp"
         android:layout_height="13dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginTop="135dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewback"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewback"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewback"
-        app:layout_constraintVertical_bias="0.316"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ministraw" />
 
     <ImageButton
@@ -100,47 +126,56 @@
         android:layout_width="15dp"
         android:layout_height="13dp"
         android:layout_marginStart="112dp"
+        android:layout_marginTop="23dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewback"
-        app:layout_constraintVertical_bias="0.039"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ministraw" />
 
     <ImageButton
         android:id="@+id/imageButton7"
         android:layout_width="15dp"
         android:layout_height="13dp"
-        android:layout_marginStart="364dp"
+        android:layout_marginTop="313dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewback"
-        app:layout_constraintVertical_bias="0.747"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ministraw" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="15dp"
         android:layout_height="13dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginTop="86dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewback"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewback"
+        app:layout_constraintHorizontal_bias="0.148"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewback"
-        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ministraw" />
 
     <ImageButton
         android:id="@+id/imageButton5"
         android:layout_width="15dp"
         android:layout_height="13dp"
-        android:layout_marginStart="288dp"
+        android:layout_marginTop="250dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewback"
-        app:layout_constraintVertical_bias="0.592"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ministraw" />
 
     <ImageButton
@@ -148,11 +183,14 @@
         android:layout_width="15dp"
         android:layout_height="13dp"
         android:layout_marginStart="22dp"
+        android:layout_marginTop="25dp"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageViewback"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewback"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageViewback"
-        app:layout_constraintVertical_bias="0.039"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ministraw" />
 
     <LinearLayout
@@ -170,17 +208,16 @@
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:gravity="center"
-            android:text="제한 시간 20초"
             android:textSize="34sp"
             android:visibility="visible" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnstart2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#FEFEFE"
+            android:backgroundTint="#EBAF4E"
             android:text="NEXT"
-            android:visibility="visible" />
+            android:textColor="#640300" />
 
     </LinearLayout>
 
@@ -188,6 +225,7 @@
         android:id="@+id/imageView_W"
         android:layout_width="match_parent"
         android:layout_height="135dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -42,7 +42,7 @@ public class log2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log2);
-        setTitle("딸기를 찾아라!");
+        setTitle("BAKING PAPA");
 
         text1 = (TextView) findViewById(R.id.textID);
         text2 = (TextView) findViewById(R.id.textPW);

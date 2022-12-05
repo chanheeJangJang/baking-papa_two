@@ -8,6 +8,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -63,12 +64,14 @@ public class story extends AppCompatActivity {
                     text1.setBackgroundColor(Color.WHITE);
                     text1.setText(" ");
                     count+=1;
+                    text1.setBackgroundColor(Color.GRAY);
+                    text1.setText("(TV에 베이킹 서바이벌 오디션 광고가 나오고 있다.)");
                 }
                 else if(count ==2){
                     img4.setVisibility(View.VISIBLE); //아버지의 회상
                     img3.setVisibility(View.INVISIBLE);
                     text1.setBackgroundColor(Color.GRAY);
-                    text1.setText("아빠 :\n헉!!! 베이킹 서바이벌?! 맞아, 난 어렸을때 잠시 파티시에를 꿈 꾸었지.... 이 아빠는 베이킹을 좋아해!!!");
+                    text1.setText("아빠 :\n헉!!! 베이킹 서바이벌?! 맞아, 난 어렸을때 잠시 파티시에를 꿈 꾸었지.... 난 베이킹을 좋아해!!!");
                     count+=1;
                 }
                 else if(count ==3){
@@ -80,8 +83,11 @@ public class story extends AppCompatActivity {
                 else if(count ==4){
                     img6.setVisibility(View.VISIBLE);  //아들 등장
                     img5.setVisibility(View.INVISIBLE);
-                    text1.setText("아들 :\n음..... 딸기케이크요!!!");
+                    text1.setText(": 아들 \n음..... 딸기케이크요!!!");
                     count+=1;
+                    text1.setGravity(Gravity.RIGHT);
+                            //                                                                                                 00
+
                 }
                 else if(count ==5){
                     img7.setVisibility(View.VISIBLE);  //아빠 등장
@@ -89,6 +95,7 @@ public class story extends AppCompatActivity {
                     text1.setText("아빠 :\n좋아! 곧 생일인 아들에게 직접 케이크를 만들어주면서 맛 평가도 부탁해볼까?");
                     count+=1;
                     btn1.setText("게임 시작!");
+                    text1.setGravity(Gravity.LEFT);
                 }
                 else if(count ==6){
                     Intent intent = new Intent(getApplicationContext(), sub.class);

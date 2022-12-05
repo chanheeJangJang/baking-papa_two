@@ -98,7 +98,9 @@
         android:id="@+id/trybtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#EBAF4E"
         android:text="TRY"
+        android:textColor="#7A2016"
         android:textSize="20dp"
         tools:visibility="invisible" />
 
@@ -106,7 +108,9 @@
         android:id="@+id/startbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="#EBAF4E"
         android:text="Start"
+        android:textColor="#660202"
         android:textSize="20dp" />
 
 </LinearLayout>

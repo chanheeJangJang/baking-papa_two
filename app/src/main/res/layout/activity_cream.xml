@@ -11,11 +11,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textmission2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD69A"
+            android:text="사진을 클릭해서 퀴즈를 풀어보자!"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/GameStartBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:backgroundTint="#EBB04C"
+            android:text="Start"
+            android:textColor="#640404" />
 
 
         <ImageButton
@@ -73,7 +85,9 @@
                 android:id="@+id/AnswerTryBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#EAB04E"
                 android:text="Try"
+                android:textColor="#650302"
                 android:visibility="invisible" />
         </LinearLayout>
 

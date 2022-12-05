@@ -30,7 +30,7 @@ public class quiz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-
+        setTitle("BAKING PAPA");
         timertxt=(TextView)findViewById(R.id.timertxt) ;
         imageView=(ImageView)findViewById(R.id.imageView);
         trybtn=(Button)findViewById(R.id.trybtn);

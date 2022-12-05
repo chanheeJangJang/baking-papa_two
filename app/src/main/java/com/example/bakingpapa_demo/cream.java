@@ -31,6 +31,7 @@ public class cream extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cream);
+        setTitle("BAKING PAPA");
 
         GameStart = (Button) findViewById(R.id.GameStartBtn);
         AnswerTry = (Button) findViewById(R.id.AnswerTryBtn);

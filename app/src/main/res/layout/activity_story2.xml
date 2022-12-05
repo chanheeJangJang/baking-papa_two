@@ -6,14 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".story2">
 
-    <TextView
-        android:id="@+id/textView5"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="242dp"
-        android:text="여기에 1-2스토리가 보이게 할려합니다."
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="500dp">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/papa3"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:background="@android:color/darker_gray"
+            android:text="아빠 :\n그럼 이젠 뭘 만들어 볼까?"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EBAF4E"
+            android:text="▶ 다음 페이지 ▶"
+            android:textColor="#660201" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

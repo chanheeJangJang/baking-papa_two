@@ -21,6 +21,7 @@ public class showtotal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_showtotal);
+        setTitle("BAKING PAPA");
 
         //  14 8   최고점 15 최저3
 

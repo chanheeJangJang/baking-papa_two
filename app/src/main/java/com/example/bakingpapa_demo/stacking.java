@@ -20,18 +20,19 @@ import java.util.TimerTask;
 
 public class stacking extends AppCompatActivity {
 
-    ImageButton bread_top_btn,bread_bottom_btn,cheese_btn,meat_btn,onion_btn,tomato_btn,egg_btn,lettuce_btn;
+    ImageButton bread_top_btn,bread_bottom_btn,ssyrup_btn,scream_btn,sjelly_btn,strawberry_btn,ccream_btn,csyrup_btn;
     ImageView[] recipe=new ImageView[11];
     ImageView[] my_recipe=new ImageView[11];
     Button retry_btn;
     TextView success_Count_txt,timer_txt;
 
-    public static final int[] materials={R.drawable.cheese,R.drawable.onion,R.drawable.egg,R.drawable.meat,R.drawable.lettuce,R.drawable.tomato};
-    public  int max_order_pattyCount=2;//난이도 조절을 위한 최대 주문 패티의 개수
+    public static final int[] materials={R.drawable.ssyrup,R.drawable.sjelly,R.drawable.ccream,R.drawable.scream,R.drawable.csyrup,R.drawable.strawberry};
+    public int max_order_pattyCount=2;//난이도 조절을 위한 최대 주문 패티의 개수
     public int order_pattyCount=0;//아래빵부터 위빵까지 패티의 총 개수
-    public int pattyCount=0;//내가 패티 버튼을 누를때마다 1씩 증가
+    public int pattyCount=0;//내가 패티 버튼을 누를때마다1씩 증가
     public Integer success_Count=0;//성공 횟수
     public Integer timer_Count=20;
+
 
     //패티들의 이미지소스 배열의 인덱스번호를 String형식으로 이어 붙여 그 햄버거 만의 코드를 생성한다.
     public String recipe_Code="";
@@ -43,17 +44,19 @@ public class stacking extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTitle("BAKING PAPA");
         setContentView(R.layout.activity_stacking); success_Count_txt=(TextView)findViewById(R.id.Success_Count_txt);
         timer_txt=(TextView)findViewById(R.id.time_txt) ;
 
         bread_top_btn=(ImageButton)findViewById(R.id.bread_top_btn);
         bread_bottom_btn=(ImageButton)findViewById(R.id.bread_bottom_btn);
-        cheese_btn=(ImageButton)findViewById(R.id.cheese_btn);
-        meat_btn=(ImageButton)findViewById(R.id.meat_btn);
-        onion_btn=(ImageButton)findViewById(R.id.onion_btn);
-        tomato_btn=(ImageButton)findViewById(R.id.tomato_btn);
-        egg_btn=(ImageButton)findViewById(R.id.egg_btn);
-        lettuce_btn=(ImageButton)findViewById(R.id.lettuce_btn);
+        ssyrup_btn=(ImageButton)findViewById(R.id.ssyrup_btn);  //치즈
+        scream_btn=(ImageButton)findViewById(R.id.scream_btn);  //패티
+        sjelly_btn=(ImageButton)findViewById(R.id.sjelly_btn);  //어니언
+        strawberry_btn=(ImageButton)findViewById(R.id.strawberry_btn); //토마토
+        ccream_btn=(ImageButton)findViewById(R.id.ccream_btn);  //계란
+        csyrup_btn=(ImageButton)findViewById(R.id.csyrup_btn); //양상추
+
 
         retry_btn=(Button)findViewById(R.id.retry_btn);
 
@@ -163,7 +166,7 @@ public class stacking extends AppCompatActivity {
             }
         });
 
-        cheese_btn.setOnClickListener(new View.OnClickListener() {
+        ssyrup_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 my_recipe[pattyCount].setImageResource(materials[0]);
@@ -198,7 +201,7 @@ public class stacking extends AppCompatActivity {
             }
         });
 
-        onion_btn.setOnClickListener(new View.OnClickListener() {
+        sjelly_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 my_recipe[pattyCount].setImageResource(materials[1]);
@@ -233,7 +236,7 @@ public class stacking extends AppCompatActivity {
             }
         });
 
-        egg_btn.setOnClickListener(new View.OnClickListener() {
+        ccream_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 my_recipe[pattyCount].setImageResource(materials[2]);
@@ -268,7 +271,7 @@ public class stacking extends AppCompatActivity {
             }
         });
 
-        meat_btn.setOnClickListener(new View.OnClickListener() {
+        scream_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 my_recipe[pattyCount].setImageResource(materials[3]);
@@ -303,7 +306,7 @@ public class stacking extends AppCompatActivity {
             }
         });
 
-        lettuce_btn.setOnClickListener(new View.OnClickListener() {
+        csyrup_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 my_recipe[pattyCount].setImageResource(materials[4]);
@@ -338,7 +341,7 @@ public class stacking extends AppCompatActivity {
             }
         });
 
-        tomato_btn.setOnClickListener(new View.OnClickListener() {
+        strawberry_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 my_recipe[pattyCount].setImageResource(materials[5]);

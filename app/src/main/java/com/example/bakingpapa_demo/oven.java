@@ -34,7 +34,7 @@ public class oven extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_oven);
 
-        setTitle("오븐 굽기 게임");
+        setTitle("BAKING PAPA");
 
 
         AlertDialog.Builder gamestart_dlg = new AlertDialog.Builder(oven.this);

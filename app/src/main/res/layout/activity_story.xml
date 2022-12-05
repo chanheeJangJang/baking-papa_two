@@ -10,69 +10,76 @@
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/step_one" />
+        app:srcCompat="@drawable/tv1" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/step_two"
+        app:srcCompat="@drawable/papa1"
         tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/step_three"
+        app:srcCompat="@drawable/tv2"
         tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/step_four"
+        app:srcCompat="@drawable/papa2"
         tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/step_five"
+        app:srcCompat="@drawable/papa3"
         tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/step_five"
+        app:srcCompat="@drawable/son"
         tools:visibility="invisible" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="match_parent"
         android:layout_height="500dp"
+        android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/step_five"
+        app:srcCompat="@drawable/papa4"
         tools:visibility="invisible" />
 
     <LinearLayout
@@ -85,13 +92,17 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="97dp"
-            android:text="TextView" />
+            android:background="@android:color/darker_gray"
+            android:text="(TV에 쿠킹마마가 출현한 방송이 나오고 있다.)"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:backgroundTint="#EBAF4E"
+            android:text="▶ 다음 페이지 ▶"
+            android:textColor="#660201" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

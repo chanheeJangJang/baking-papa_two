@@ -31,7 +31,7 @@ public class sub extends AppCompatActivity {
     log2.DatabaseOpenHelper helper; ////////   여기부분 참고코드랑 좀 다름
     SQLiteDatabase database;
 
-    TextView text1, text2, text3, textSec, textid;
+    TextView text1, text2, text3, textSec, timetext;
     Button btn1, btn2;
     ImageView imgstaw, imgback, imgw;
     ImageButton imgbtn1, imgbtn2, imgbtn3, imgbtn4, imgbtn5, imgbtn6, imgbtn7;
@@ -42,14 +42,14 @@ public class sub extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub);
 
-        setTitle("딸기를 찾아라!");
-        //textid = (TextView) findViewById(R.id.textView);////////////
+        setTitle("BAKING PAPA");
+        timetext = (TextView) findViewById(R.id.timertxt2);////////////
         text1 = (TextView) findViewById(R.id.textView1);
         text2 = (TextView) findViewById(R.id.textView2);
         text3 = (TextView) findViewById(R.id.textView3);
         textSec = (TextView) findViewById(R.id.textTime);
         btn1 = (Button) findViewById(R.id.btnstart);
-        btn2 = (Button) findViewById(R.id.button2);
+        btn2 = (Button) findViewById(R.id.btnstart2);
         imgstaw = (ImageView) findViewById(R.id.imageView1);
         imgback = (ImageView) findViewById(R.id.imageViewback);
         imgw = (ImageView) findViewById(R.id.imageView_W);
@@ -85,9 +85,10 @@ public class sub extends AppCompatActivity {
                 TimerTask jang = new TimerTask() {
                     public void run() {
                         seconds -= 1;
-                        textSec.setText("남은 시간 : " + seconds);
+
+                        timetext.setText("남은 시간 : " + seconds);
                         if(seconds == 0) {
-                            btn2.setBackgroundColor(Color.rgb(0x20,0x20,0x20));
+
                             imgw.setVisibility(View.INVISIBLE);
 
                             timer.cancel();
@@ -115,7 +116,7 @@ public class sub extends AppCompatActivity {
                              */
                         }
                         else if(count == 7){
-                            btn2.setBackgroundColor(Color.rgb(0x20,0x20,0x20));
+
                             imgw.setVisibility(View.INVISIBLE);
 
                             textSec.setText("Perfect");
